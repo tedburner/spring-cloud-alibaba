@@ -3,7 +3,7 @@ dubbo:
     base-packages: com.alibaba.server
   protocol:
     name: dubbo
-    port: -1
+    port: 8081
   registry:
     address: spring-cloud://localhost
 
