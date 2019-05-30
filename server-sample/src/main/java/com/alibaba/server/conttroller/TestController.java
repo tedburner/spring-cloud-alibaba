@@ -1,5 +1,6 @@
 package com.alibaba.server.conttroller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-    @RequestMapping(value = "/test")
-    public String test(){
-        return "Hello, Spring Cloud Alibaba!";
+    @GetMapping(value = "/test")
+    public String test(String name) {
+        return "Hello, Spring Cloud Alibaba!" + " This name is " + name;
     }
 }
