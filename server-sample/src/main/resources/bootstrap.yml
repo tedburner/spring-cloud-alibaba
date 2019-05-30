@@ -1,12 +1,11 @@
-dubbo:
-  scan:
-    base-packages: com.alibaba.server
-  protocol:
-    name: dubbo
-    port: 8081
-  registry:
-    address: spring-cloud://localhost
-
+#dubbo:
+#  scan:
+#    base-packages: com.alibaba.server
+#  protocol:
+#    name: dubbo
+#    port: 8081
+#  registry:
+#    address: spring-cloud://localhost
 spring:
   application:
     name: server-sample
@@ -16,3 +15,5 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+server:
+  port: 8081

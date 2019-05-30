@@ -6,7 +6,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * @author : lingjun.jlj
- * @decription:
+ * @decription: 服务提供者
  */
 @EnableDiscoveryClient
 @SpringBootApplication
