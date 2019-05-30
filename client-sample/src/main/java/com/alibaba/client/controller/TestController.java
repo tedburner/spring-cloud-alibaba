@@ -21,9 +21,6 @@ public class TestController {
     @Autowired
     private LoadBalancerClient loadBalancerClient;
 
-    @Value("${alibaba.title:}")
-    private String title;
-
     @GetMapping(value = "/test")
     public String test() {
         ServiceInstance serviceInstance = loadBalancerClient.choose("server-sample");
@@ -32,11 +29,6 @@ public class TestController {
         String result = template.getForObject(url, String.class);
         return "Invoke : " + url + ", return : " + result;
 
-    }
-
-    @GetMapping(value = "/getConfig")
-    public String getTitle() {
-        return "Nacos config is " + title;
     }
 
 }

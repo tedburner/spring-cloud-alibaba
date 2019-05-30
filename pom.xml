@@ -12,6 +12,7 @@
     <modules>
         <module>client-sample</module>
         <module>server-sample</module>
+        <module>nacos-config</module>
     </modules>
 
     <properties>
